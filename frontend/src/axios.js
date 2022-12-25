@@ -5,6 +5,8 @@ const API_ROOT =
     ? "/api"
     : "http://localhost:4000/api";
 
+   
+
 const instance = axios.create({ baseURL: API_ROOT });
 
 const startGame = async () => {
