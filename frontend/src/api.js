@@ -5,8 +5,6 @@ const API_ROOT =
     ? "/api"
     : "http://localhost:4000/api";
 
-instance = axios.create({ baseURL: API_ROOT });
-
-export default instance;
+export default instance = axios.create({ baseURL: API_ROOT });
 
 // instance.get('/hi').then((data) => console.log(data));
