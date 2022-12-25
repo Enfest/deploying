@@ -4,9 +4,12 @@ import guessRoute from './routes/guess'
 const app = express()
   // init middleware
 
-if (process.env.NODE_ENV === "development") {
-	app.use(cors());
-}
+// if (process.env.NODE_ENV === "development") {
+// 	app.use(cors());
+// }
+
+app.use(cors());
+
   // define routes
 app.use('/api/guess', guessRoute)
   // define server
